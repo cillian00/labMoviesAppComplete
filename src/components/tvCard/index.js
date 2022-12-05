@@ -33,7 +33,7 @@ export default function TvCard({ tvs, action }) {
               <PlaylistIcon />
             </Avatar>
           ) : (
-            <Avatar sx={{ backgroundColor: 'blue' }}>
+            <Avatar sx={{ backgroundColor: 'white' }}>
               <PlaylistAddIcon />
             </Avatar>
           )

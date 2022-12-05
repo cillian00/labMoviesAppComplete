@@ -22,8 +22,7 @@ const App  = () => {
 
     onAuthStateChanged(auth, (currentUser) => {
         setUser(currentUser);
-        if (currentUser) { this.setState({ isLoggedIn: true })} 
-        else { this.setState({ isLoggedIn: false })}
+
       });
 
   });
@@ -31,10 +30,6 @@ const App  = () => {
   const handleMenuSelect = () => {
     navigates('pages/homepage');
   };
-
-
-  
-
 
 
   const register = async () => {
@@ -71,12 +66,7 @@ const App  = () => {
   };
 
 
-  const getUser = () => {
 
-
-
-
-  }
 
   return (
     <div className="App">
@@ -124,9 +114,7 @@ const App  = () => {
   
   <br></br>
 
-      isLoggedIn ? (
       <button onClick={handleMenuSelect}> Continue.. </button>
-      ): null
     
       
     </div>
